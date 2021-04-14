@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Find your name here!</h1>
+    <h3 id="user_name">Name:</h3>
+
+    <script>
+        function nameList() {
+            fetch('https://randomuser.me/api/')
+                .then(res => res.json())
+                .then(data => {
+                    const user = data.results[0];
+                    const name = user.name;
+                    const userName = `${name.title} ${name.first} ${name.last}`
+                    document.getElementById('user_name').innerText = userName;
+                });
+        }
+        nameList();
+        setInterval(() => {
+            nameList();
+        }, 1000);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+{
+    "students": [
+        {
+            "name": "Forhad reza",
+            "middlename": null,
+            "age": 12,
+            "cgpa": 3.33,
+            "isRegistered": true,
+            "languages": [
+                "bangla",
+                "english",
+                "arabi"
+            ],
+            "firends": [
+                {
+                    "name": "Anar",
+                    "age": 32
+                },
+                {
+                    "name": "Banar",
+                    "age": 32
+                }
+            ]
+        },
+        {
+            "name": "Forhad reza",
+            "middlename": null,
+            "age": 12,
+            "cgpa": 3.33,
+            "isRegistered": true,
+            "languages": [
+                "bangla",
+                "english",
+                "arabi"
+            ],
+            "firends": [
+                {
+                    "name": "Anar",
+                    "age": 32
+                },
+                {
+                    "name": "Banar",
+                    "age": 32
+                }
+            ]
+        }
+    ]
+}
